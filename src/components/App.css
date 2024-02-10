@@ -1,0 +1,11 @@
+.centered-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Optional: Center within the viewport height */
+    background-color: blue;
+  }
+
+  .centered-gif img {
+    max-width: 60%; /* Ensure the image doesn't exceed its container */
+  }
