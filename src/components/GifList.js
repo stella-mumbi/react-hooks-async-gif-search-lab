@@ -1,25 +1,15 @@
 import React from "react";
 
-
-
-
-function GifList ({data}){
-    return(
-<div className="Gif-list">
-    <ul>
-        {data.map((gif)=>(
-
+const GifList = ({ gifs }) => {
+    return (
+        <ul>
+        {gifs.map((gif) => (
             <li key={gif.id}>
-
-                <img src={gif.images.original.url}alt={gif.slug}/>
+            <img src={gif.images.fixed_height.url} alt={gif.title} />
             </li>
         ))}
-       
-    </ul>
-</div>
-
+        </ul>
     );
-}
+};
 
-export default GifList
-
+export default GifList;
